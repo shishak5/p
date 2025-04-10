@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="carrito.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Carrito de Compras</h1>
+    </header>
+
+    <nav>
+        <a href="carniceria.html">Inicio</a>
+        <a href="Carrito.html">Carrito</a>
+        <a href="pedidos.html">Pedidos</a>
+        <a href="comentarios.html">Comentarios</a>
+        <a href="configuracion.html">Configuración</a>
+        <a href="#" id="logout">Cerrar sesión</a>
+
+    </nav>
+
+    <div class="main-section">
+        <h3>Productos en tu carrito</h3>
+
+        
+           
+            <!-- Más productos aquí -->
+        </div>
+        
+
+        <!-- ✅ Clase y ID corregidos -->
+        <div class="cart-container" id="cart-products">
+            <!-- Los productos se agregarán aquí mediante JavaScript -->
+        </div>
+
+        <!-- ✅ ID corregido para total -->
+        <div id="total-price-container">
+            <p>Total: <span id="totalPrice">0</span></p>
+        </div>
+
+        <!-- ✅ ID corregido para botón de pago -->
+        <button class="checkout-button" id="checkoutButton">Proceder al pago</button>
+    </div>
+
+    <!-- Modal de Confirmación -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <h3>Elija el método de pago</h3>
+
+            <select id="payment-method">
+                <option value="credit-card">Tarjeta de Crédito</option>
+                <option value="paypal">PayPal</option>
+                <option value="cash">Efectivo</option>
+            </select>
+
+            <p>¿Estás seguro de que deseas proceder con la compra?</p>
+
+            <button id="confirm-btn" class="modal-button">Confirmar</button>
+            <button id="cancel-btn" class="modal-button">Cancelar</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Carnicería El Chuchy | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="carrito.js"></script>
+</body>
+
+</html>
+

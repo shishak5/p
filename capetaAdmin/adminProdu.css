@@ -1,0 +1,212 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #d9534f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c9302c;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    margin: 10% auto;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Contenedor principal de los productos */
+.products {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que los productos se muevan a la siguiente línea */
+    /*justify-content: space-between; /* Espaciado entre los productos */
+    gap: 20px;  /* Espacio entre los productos */
+    margin-top: 20px;
+}
+
+/* Cada tarjeta de producto */
+.product-card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 23%; /* Cada tarjeta ocupará aproximadamente el 23% del ancho del contenedor */
+    margin: 10px 0;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que las imágenes no sobresalgan */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del ancho */
+}
+
+/* Ajustes de las imágenes */
+.product-card img {
+    width: 100%; /* Las imágenes ocupan todo el ancho del contenedor */
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: contain; /* Mantener la proporción sin distorsionar */
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Añadir borde sutil a las imágenes */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para las imágenes */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Botón Agregar al carrito */
+.add-to-cart {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40%;
+}
+
+/* Ajustes para el contenedor de la barra de búsqueda y el menú de usuario */
+.search-input {
+    padding: 15px 15px;
+    border: none;
+    border-radius: 20px;
+    width: 400px;
+    height: 15px;
+}
+
+.search-button {
+    padding: 6px 10px;
+    background-color: #d9534f;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.search-button i {
+    color: white;
+}
+
+.search-input:focus,
+.search-button:focus {
+    outline: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/**/
+/* Estilos para el Modal */
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    margin-top: 10px;
+}
+
+

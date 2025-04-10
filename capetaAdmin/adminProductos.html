@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos - Carnicería El Chuchy</title>
+    <link rel="stylesheet" href="adminProdu.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Gestión de Productos</h1>
+        <p>Aquí puedes agregar, eliminar o modificar productos en la carnicería.</p>
+    </header>
+
+    <nav>
+        <a href="../admin.html">Inicio</a>
+        <a href="adminProductos.html">Productos</a>
+        <a href="adminPedido.html">Pedidos</a>
+        <a href="adminComentarios.html">Comentarios</a>
+        <a href="adminUsuarios.html">usuarios </a>
+
+
+
+        <a href="#" id="logout">Cerrar sesión</a>
+
+    </nav>
+
+    <main>
+        <!-- Formulario para agregar nuevo producto -->
+        <section id="add-product">
+            <h2>Agregar Nuevo Producto</h2>
+            <form id="add-product-form" enctype="multipart/form-data">
+                <label for="product-name">Nombre del Producto:</label>
+                <input type="text" id="product-name" required>
+
+                <label for="product-price">Precio por Kg:</label>
+                <input type="number" id="product-price" required min="0.01" step="0.01">
+
+                <label for="product-image-url">URL de la Imagen:</label>
+                <input type="text" id="product-image-url" required>
+
+
+                <label for="product-category">Categoría:</label>
+                <select id="product-category" required>
+                    <option value="res">Res</option>
+                    <option value="pollo">Pollo</option>
+                    <option value="cerdo">Cerdo</option>
+                    <option value="cordero">Cordero</option>
+                    <option value="otros">Otros</option>
+                </select>
+
+                <button type="submit">Agregar Producto</button>
+            </form>
+        </section>
+
+        <!-- Sección para listar productos -->
+        <section id="product-list">
+            <h2>Productos Existentes</h2>
+            <div class="products">
+                <!-- Los productos se mostrarán aquí dinámicamente -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal para editar un producto -->
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <h2>Editar Producto</h2>
+            <form id="edit-product-form">
+                <label for="edit-product-name">Nombre del Producto:</label>
+                <input type="text" id="edit-product-name" required>
+
+                <label for="edit-product-price">Precio por Kg:</label>
+                <input type="number" id="edit-product-price" required min="0.01" step="0.01">
+
+                <label for="edit-product-image-url">URL de la Imagen:</label>
+                <input type="text" id="edit-product-image-url" required>
+
+                <label for="edit-product-category">Categoría:</label>
+                <select id="edit-product-category" required>
+                    <option value="res">Res</option>
+                    <option value="pollo">Pollo</option>
+                    <option value="cerdo">Cerdo</option>
+                    <option value="cordero">Cordero</option>
+                    <option value="otros">Otros</option>
+                </select>
+
+                <button type="submit">Guardar Cambios</button>
+                <button type="button" id="close-modal">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2025 Carnicería El Chuchy | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="adminProducts.js"></script>
+
+</body>
+
+</html>

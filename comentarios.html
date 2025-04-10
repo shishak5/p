@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnicería El Chuchy</title>
+    <link rel="stylesheet" href="comentarios.css">
+</head>
+<body>
+
+<header>
+    <h1>Carnicería El Chuchy</h1>
+    <p>Lo mejor en carnes frescas y de calidad</p>
+</header>
+
+<nav>
+    <a href="carniceria.html">Inicio</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="pedidos.html">Pedidos</a>
+    <a href="comentarios.html">Comentarios</a>
+    <a href="configuracion.html">Configuración</a>
+
+    <a href="#" id="logout">Cerrar sesión</a>
+</nav>
+
+<div class="contact-section">
+    <h2>Contáctanos</h2>
+    <p>Si tienes alguna pregunta o inquietud, no dudes en ponerte en contacto con nosotros a través del siguiente formulario. ¡Te atenderemos lo más rápido posible!</p>
+
+    <form id="contact-form" class="contact-form">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" rows="4" required></textarea>
+
+        <button type="submit" class="submit-btn">Enviar mensaje</button>
+        <span id="aceptacion" style="color:red;"></span>
+    </form>
+
+    <div class="contact-info">
+        <h3>Información de contacto</h3>
+        <p><strong>Dirección:</strong> Calle insurgente, San Miguelito, sonora</p>
+        <p><strong>Teléfono:</strong> 6242461269</p>
+        <p><strong>Correo electrónico:</strong> carniceria_chuchy@gmail.com</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Carnicería El Chuchy | Todos los derechos reservados</p>
+</footer>
+
+<script src="comentarios.js"></script>
+
+</body>
+</html>
